@@ -5,11 +5,6 @@
 [![Made with Streamlit](https://img.shields.io/badge/Made%20with-Streamlit-FF4B4B.svg?style=for-the-badge&logo=Streamlit)](https://streamlit.io)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
 
----
-
-## 🎥 Demo
-
-*(It is highly recommended to add a quick GIF or screenshot of the app in action here.)*
 
 ---
 
@@ -59,20 +54,20 @@
 ### 2. Installation
 
 1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/FloatChat.git](https://github.com/your-username/FloatChat.git)
+    ```
+    git clone https://github.com/your-username/FloatChat.git
     cd FloatChat
     ```
 
 2.  **Create a virtual environment and install dependencies:**
-    ```bash
+    ```
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     pip install -r requirements.txt
     ```
 
 3.  **Download the spaCy NLP model:**
-    ```bash
+    ```
     python -m spacy download en_core_web_sm
     ```
 
@@ -80,42 +75,65 @@
 
 Create a `.streamlit/secrets.toml` file to store your API keys and database credentials. **Do not commit this file to Git.**
 
-```toml
-# .streamlit/secrets.toml
-
-# Google Gemini API Key
+.streamlit/secrets.toml
+Google Gemini API Key
 GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
 
-# PostgreSQL Database Configuration
+PostgreSQL Database Configuration
 DB_HOST = "localhost"
 DB_PORT = 5432
 DB_NAME = "argo_oceandb"
 DB_USER = "floatchat_user"
 DB_PASSWORD = "YOUR_DB_PASSWORD"
 
+text
+
 ### 4. Running the Application
 
 #### 🧩 Initialize the Database Schema
 
-Run the Streamlit app:
-```bash
+1. Run the Streamlit app:
 streamlit run oceanic_enhanced.py
-Once the app loads:
 
-Open the sidebar
+text
 
-Click “Update Schema” to initialize database tables
+2. Once the app loads:
+* Open the sidebar
+* Click "Update Schema" to initialize database tables
 
-🌊 Load Data (Recommended)
-In the sidebar, select “Live Argopy Fetch” as the data source
+#### 🌊 Load Data (Recommended)
 
-Choose the dataset type: bgc
+1. In the sidebar, select "Live Argopy Fetch" as the data source
+2. Choose the dataset type: `bgc`
+3. Enter float IDs (e.g., `5906439`, `1901393`)
+4. Click "⬆️ Upload this dataset to PostgreSQL"
 
-Enter float IDs (e.g., 5906439, 1901393)
+**Note:** The ChromaDB vector database will automatically populate based on the data stored in PostgreSQL.
 
-Click “⬆️ Upload this dataset to PostgreSQL”
+#### 💬 Start Chatting!
 
-🧠 Note: The ChromaDB vector database will automatically populate based on the data stored in PostgreSQL.
+Switch the data source to "Smart Search (RAG)" in the sidebar and start exploring ARGO data through natural language queries.
 
-💬 Start Chatting!
-Switch the data source to “Smart Search (RAG)” in the sidebar and start exploring ARGO data through natural language queries.
+---
+
+## 📝 Usage Examples
+
+### Example Queries
+
+* "Show me temperature profiles from floats in the North Atlantic during summer 2023"
+* "Compare salinity levels between tropical and polar regions"
+* "Find anomalies in dissolved oxygen measurements"
+* "Plot the trajectory of float 5906439"
+
+### Compare Feature
+
+1. Save your first query result to Slot A
+2. Run a different query and save to Slot B
+3. Click "Compare Slots" for a side-by-side AI-powered comparison
+
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
