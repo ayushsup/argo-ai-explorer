@@ -92,3 +92,30 @@ DB_PORT = 5432
 DB_NAME = "argo_oceandb"
 DB_USER = "floatchat_user"
 DB_PASSWORD = "YOUR_DB_PASSWORD"
+
+### 4. Running the Application
+
+#### 🧩 Initialize the Database Schema
+
+Run the Streamlit app:
+```bash
+streamlit run oceanic_enhanced.py
+Once the app loads:
+
+Open the sidebar
+
+Click “Update Schema” to initialize database tables
+
+🌊 Load Data (Recommended)
+In the sidebar, select “Live Argopy Fetch” as the data source
+
+Choose the dataset type: bgc
+
+Enter float IDs (e.g., 5906439, 1901393)
+
+Click “⬆️ Upload this dataset to PostgreSQL”
+
+🧠 Note: The ChromaDB vector database will automatically populate based on the data stored in PostgreSQL.
+
+💬 Start Chatting!
+Switch the data source to “Smart Search (RAG)” in the sidebar and start exploring ARGO data through natural language queries.
