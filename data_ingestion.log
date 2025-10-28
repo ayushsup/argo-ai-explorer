@@ -1,0 +1,585 @@
+2025-09-17 05:02:55,309 - __main__ - INFO - Initializing ARGO data ingestion pipeline...
+2025-09-17 05:02:55,373 - __main__ - ERROR - Failed to initialize components: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "floatchat_user"
+
+2025-09-17 05:05:04,133 - __main__ - INFO - Initializing ARGO data ingestion pipeline...
+2025-09-17 05:05:04,188 - __main__ - ERROR - Failed to initialize components: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "floatchat_user"
+
+2025-09-17 05:08:14,643 - __main__ - INFO - Initializing ARGO data ingestion pipeline...
+2025-09-17 05:08:14,694 - __main__ - ERROR - Failed to initialize components: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "floatchat_user"
+
+2025-09-17 05:14:13,682 - __main__ - INFO - Initializing ARGO data ingestion pipeline...
+2025-09-17 05:14:13,732 - __main__ - ERROR - Failed to initialize components: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "floatchat_user"
+
+2025-09-17 05:23:33,943 - __main__ - INFO - Initializing ARGO data ingestion pipeline...
+2025-09-17 05:23:34,003 - __main__ - ERROR - Failed to initialize components: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "floatchat_user"
+
+2025-09-17 05:25:39,393 - __main__ - INFO - Initializing ARGO data ingestion pipeline...
+2025-09-17 05:25:39,446 - __main__ - ERROR - Failed to initialize components: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "floatchat_user"
+
+2025-09-17 05:28:48,839 - __main__ - INFO - Initializing ARGO data ingestion pipeline...
+2025-09-17 05:28:48,994 - __main__ - INFO - Database connection pool initialized
+2025-09-17 05:28:49,049 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-17 05:28:49,261 - __main__ - INFO - ChromaDB initialized
+2025-09-17 05:28:49,264 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-09-17 05:28:49,264 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-17 05:28:55,917 - __main__ - INFO - Embedding model loaded
+2025-09-17 05:28:55,918 - __main__ - INFO - Starting bulk ingestion for Indian Ocean...
+2025-09-17 05:28:55,918 - __main__ - INFO - Starting bulk ingestion of Indian Ocean ARGO data
+2025-09-17 05:28:55,918 - __main__ - INFO - Searching for floats in Indian Ocean (-30°-30°N, 20°-120°E)
+2025-09-17 05:28:55,919 - __main__ - INFO - Date range: 2020-01-01 to 2025-09-17
+2025-09-17 05:29:55,982 - __main__ - WARNING - Failed to get region index, using fallback method: 
+2025-09-17 05:29:55,982 - __main__ - INFO - Using fallback list of 20 Indian Ocean floats
+2025-09-17 05:29:55,982 - __main__ - INFO - Will process 20 floats with 3 parallel workers
+2025-09-17 05:29:55,984 - __main__ - INFO - Fetching phy data for float 2902696 (attempt 1)
+2025-09-17 05:29:55,985 - __main__ - INFO - Fetching phy data for float 2902697 (attempt 1)
+2025-09-17 05:29:55,989 - __main__ - INFO - Fetching phy data for float 2902698 (attempt 1)
+2025-09-17 05:29:59,791 - __main__ - INFO - Successfully fetched data for float 2902698
+2025-09-17 05:29:59,874 - __main__ - INFO - Processed 6261 records for float 2902698
+2025-09-17 05:30:00,017 - __main__ - INFO - Successfully fetched data for float 2902696
+2025-09-17 05:30:00,047 - __main__ - INFO - Processed 5784 records for float 2902696
+2025-09-17 05:30:00,262 - __main__ - INFO - Successfully fetched data for float 2902697
+2025-09-17 05:30:00,284 - __main__ - INFO - Processed 6078 records for float 2902697
+2025-09-17 05:30:07,890 - __main__ - INFO - Stored 51 profiles for float 2902696
+2025-09-17 05:30:07,891 - __main__ - INFO - Fetching bgc data for float 2902696 (attempt 1)
+2025-09-17 05:30:08,340 - __main__ - INFO - Stored 60 profiles for float 2902698
+2025-09-17 05:30:08,341 - __main__ - INFO - Fetching bgc data for float 2902698 (attempt 1)
+2025-09-17 05:30:08,393 - __main__ - INFO - Stored 54 profiles for float 2902697
+2025-09-17 05:30:08,393 - __main__ - INFO - Fetching bgc data for float 2902697 (attempt 1)
+2025-09-17 05:30:19,982 - __main__ - ERROR - Attempt 1 failed for float 2902697: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902697'
+2025-09-17 05:30:20,089 - __main__ - ERROR - Attempt 1 failed for float 2902696: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902696'
+2025-09-17 05:30:23,267 - __main__ - ERROR - Attempt 1 failed for float 2902698: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902698'
+2025-09-17 05:30:24,989 - __main__ - INFO - Fetching bgc data for float 2902697 (attempt 2)
+2025-09-17 05:30:25,090 - __main__ - INFO - Fetching bgc data for float 2902696 (attempt 2)
+2025-09-17 05:30:28,268 - __main__ - INFO - Fetching bgc data for float 2902698 (attempt 2)
+2025-09-17 05:30:35,104 - __main__ - ERROR - Attempt 2 failed for float 2902698: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902698'
+2025-09-17 05:30:36,980 - __main__ - ERROR - Attempt 2 failed for float 2902696: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902696'
+2025-09-17 05:30:38,741 - __main__ - ERROR - Attempt 2 failed for float 2902697: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902697'
+2025-09-17 05:30:40,105 - __main__ - INFO - Fetching bgc data for float 2902698 (attempt 3)
+2025-09-17 05:30:41,981 - __main__ - INFO - Fetching bgc data for float 2902696 (attempt 3)
+2025-09-17 05:30:43,742 - __main__ - INFO - Fetching bgc data for float 2902697 (attempt 3)
+2025-09-17 05:30:48,584 - __main__ - ERROR - Attempt 3 failed for float 2902696: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902696'
+2025-09-17 05:30:48,585 - __main__ - ERROR - All attempts failed for float 2902696
+2025-09-17 05:30:48,585 - __main__ - INFO - Fetching phy data for float 2902699 (attempt 1)
+2025-09-17 05:30:48,586 - __main__ - INFO - Successfully processed float 2902696 (1/20)
+2025-09-17 05:30:52,503 - __main__ - ERROR - Attempt 1 failed for float 2902699: https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats.nc?config_mission_number,cycle_number,data_mode,direction,latitude,longitude,platform_number,position_qc,pres,pres_adjusted,pres_adjusted_error,pres_adjusted_qc,pres_qc,psal,psal_adjusted,psal_adjusted_error,psal_adjusted_qc,psal_qc,temp,temp_adjusted,temp_adjusted_error,temp_adjusted_qc,temp_qc,time,time_qc,vertical_sampling_scheme&platform_number=~"2902699"&latitude!=NaN&longitude!=NaN&distinct()&orderBy("time,pres")
+2025-09-17 05:30:54,484 - __main__ - ERROR - Attempt 3 failed for float 2902698: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902698'
+2025-09-17 05:30:54,485 - __main__ - ERROR - All attempts failed for float 2902698
+2025-09-17 05:30:54,486 - __main__ - INFO - Fetching phy data for float 2902700 (attempt 1)
+2025-09-17 05:30:54,486 - __main__ - INFO - Successfully processed float 2902698 (2/20)
+2025-09-17 05:30:57,394 - __main__ - ERROR - Attempt 3 failed for float 2902697: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902697'
+2025-09-17 05:30:57,395 - __main__ - ERROR - All attempts failed for float 2902697
+2025-09-17 05:30:57,395 - __main__ - INFO - Fetching phy data for float 5906000 (attempt 1)
+2025-09-17 05:30:57,395 - __main__ - INFO - Successfully processed float 2902697 (3/20)
+2025-09-17 05:30:57,504 - __main__ - INFO - Fetching phy data for float 2902699 (attempt 2)
+2025-09-17 05:30:58,922 - __main__ - INFO - Successfully fetched data for float 2902700
+2025-09-17 05:30:58,938 - __main__ - INFO - Processed 7075 records for float 2902700
+2025-09-17 05:31:01,273 - __main__ - ERROR - Attempt 2 failed for float 2902699: https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats.nc?config_mission_number,cycle_number,data_mode,direction,latitude,longitude,platform_number,position_qc,pres,pres_adjusted,pres_adjusted_error,pres_adjusted_qc,pres_qc,psal,psal_adjusted,psal_adjusted_error,psal_adjusted_qc,psal_qc,temp,temp_adjusted,temp_adjusted_error,temp_adjusted_qc,temp_qc,time,time_qc,vertical_sampling_scheme&platform_number=~"2902699"&latitude!=NaN&longitude!=NaN&distinct()&orderBy("time,pres")
+2025-09-17 05:31:04,588 - __main__ - INFO - Stored 73 profiles for float 2902700
+2025-09-17 05:31:04,588 - __main__ - INFO - Fetching bgc data for float 2902700 (attempt 1)
+2025-09-17 05:31:06,292 - __main__ - INFO - Fetching phy data for float 2902699 (attempt 3)
+2025-09-17 05:31:07,129 - __main__ - INFO - Successfully fetched data for float 5906000
+2025-09-17 05:31:07,166 - __main__ - INFO - Processed 41760 records for float 5906000
+2025-09-17 05:31:10,093 - __main__ - ERROR - Attempt 3 failed for float 2902699: https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats.nc?config_mission_number,cycle_number,data_mode,direction,latitude,longitude,platform_number,position_qc,pres,pres_adjusted,pres_adjusted_error,pres_adjusted_qc,pres_qc,psal,psal_adjusted,psal_adjusted_error,psal_adjusted_qc,psal_qc,temp,temp_adjusted,temp_adjusted_error,temp_adjusted_qc,temp_qc,time,time_qc,vertical_sampling_scheme&platform_number=~"2902699"&latitude!=NaN&longitude!=NaN&distinct()&orderBy("time,pres")
+2025-09-17 05:31:10,094 - __main__ - ERROR - All attempts failed for float 2902699
+2025-09-17 05:31:10,094 - __main__ - INFO - Fetching bgc data for float 2902699 (attempt 1)
+2025-09-17 05:31:20,506 - __main__ - ERROR - Attempt 1 failed for float 2902700: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902700'
+2025-09-17 05:31:22,362 - __main__ - ERROR - Attempt 1 failed for float 2902699: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902699'
+2025-09-17 05:31:25,508 - __main__ - INFO - Fetching bgc data for float 2902700 (attempt 2)
+2025-09-17 05:31:27,364 - __main__ - INFO - Fetching bgc data for float 2902699 (attempt 2)
+2025-09-17 05:31:34,693 - __main__ - ERROR - Attempt 2 failed for float 2902700: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902700'
+2025-09-17 05:31:39,694 - __main__ - INFO - Fetching bgc data for float 2902700 (attempt 3)
+2025-09-17 05:31:43,184 - __main__ - ERROR - Attempt 2 failed for float 2902699: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902699'
+2025-09-17 05:31:48,186 - __main__ - INFO - Fetching bgc data for float 2902699 (attempt 3)
+2025-09-17 05:31:55,241 - __main__ - ERROR - Attempt 3 failed for float 2902700: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902700'
+2025-09-17 05:31:55,242 - __main__ - ERROR - All attempts failed for float 2902700
+2025-09-17 05:31:55,242 - __main__ - INFO - Fetching phy data for float 5906001 (attempt 1)
+2025-09-17 05:31:55,242 - __main__ - INFO - Successfully processed float 2902700 (4/20)
+2025-09-17 05:31:55,463 - __main__ - INFO - Stored 84 profiles for float 5906000
+2025-09-17 05:31:55,463 - __main__ - INFO - Fetching bgc data for float 5906000 (attempt 1)
+2025-09-17 05:31:59,786 - __main__ - ERROR - Attempt 3 failed for float 2902699: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902699'
+2025-09-17 05:31:59,787 - __main__ - ERROR - All attempts failed for float 2902699
+2025-09-17 05:31:59,787 - __main__ - INFO - Fetching phy data for float 5906002 (attempt 1)
+2025-09-17 05:31:59,787 - __main__ - INFO - Successfully processed float 2902699 (5/20)
+2025-09-17 05:32:00,006 - __main__ - INFO - Successfully fetched data for float 5906001
+2025-09-17 05:32:00,028 - __main__ - INFO - Processed 9457 records for float 5906001
+2025-09-17 05:32:10,302 - __main__ - INFO - Successfully fetched data for float 5906002
+2025-09-17 05:32:10,385 - __main__ - INFO - Processed 76078 records for float 5906002
+2025-09-17 05:32:20,853 - __main__ - INFO - Stored 19 profiles for float 5906001
+2025-09-17 05:32:20,855 - __main__ - INFO - Fetching bgc data for float 5906001 (attempt 1)
+2025-09-17 05:32:24,847 - __main__ - INFO - Successfully fetched data for float 5906000
+2025-09-17 05:32:24,860 - __main__ - INFO - Processed 768 records for float 5906000
+2025-09-17 05:32:27,754 - __main__ - INFO - Stored 84 profiles for float 5906000
+2025-09-17 05:32:27,757 - __main__ - INFO - Fetching phy data for float 5906003 (attempt 1)
+2025-09-17 05:32:27,757 - __main__ - INFO - Successfully processed float 5906000 (6/20)
+2025-09-17 05:32:36,453 - __main__ - INFO - Successfully fetched data for float 5906003
+2025-09-17 05:32:36,506 - __main__ - INFO - Processed 40099 records for float 5906003
+2025-09-17 05:32:44,012 - __main__ - INFO - Successfully fetched data for float 5906001
+2025-09-17 05:32:44,023 - __main__ - INFO - Processed 111 records for float 5906001
+2025-09-17 05:32:44,656 - __main__ - INFO - Stored 11 profiles for float 5906001
+2025-09-17 05:32:44,657 - __main__ - INFO - Fetching phy data for float 5906004 (attempt 1)
+2025-09-17 05:32:44,657 - __main__ - INFO - Successfully processed float 5906001 (7/20)
+2025-09-17 05:32:48,599 - __main__ - INFO - Successfully fetched data for float 5906004
+2025-09-17 05:32:48,625 - __main__ - INFO - Processed 4453 records for float 5906004
+2025-09-17 05:32:57,003 - __main__ - INFO - Stored 9 profiles for float 5906004
+2025-09-17 05:32:57,003 - __main__ - INFO - Fetching bgc data for float 5906004 (attempt 1)
+2025-09-17 05:33:15,882 - __main__ - INFO - Successfully fetched data for float 5906004
+2025-09-17 05:33:15,898 - __main__ - INFO - Processed 57 records for float 5906004
+2025-09-17 05:33:16,218 - __main__ - INFO - Stored 8 profiles for float 5906004
+2025-09-17 05:33:16,220 - __main__ - INFO - Fetching phy data for float 6902746 (attempt 1)
+2025-09-17 05:33:16,220 - __main__ - INFO - Successfully processed float 5906004 (8/20)
+2025-09-17 05:33:20,373 - __main__ - INFO - Successfully fetched data for float 6902746
+2025-09-17 05:33:20,420 - __main__ - INFO - Processed 12518 records for float 6902746
+2025-09-17 05:33:40,187 - __main__ - INFO - Stored 117 profiles for float 6902746
+2025-09-17 05:33:40,188 - __main__ - INFO - Fetching bgc data for float 6902746 (attempt 1)
+2025-09-17 05:33:44,778 - __main__ - INFO - Stored 81 profiles for float 5906003
+2025-09-17 05:33:44,779 - __main__ - INFO - Fetching bgc data for float 5906003 (attempt 1)
+2025-09-17 05:33:54,260 - __main__ - ERROR - Attempt 1 failed for float 6902746: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902746'
+2025-09-17 05:33:59,268 - __main__ - INFO - Fetching bgc data for float 6902746 (attempt 2)
+2025-09-17 05:34:08,078 - __main__ - ERROR - Attempt 2 failed for float 6902746: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902746'
+2025-09-17 05:34:13,165 - __main__ - INFO - Fetching bgc data for float 6902746 (attempt 3)
+2025-09-17 05:34:26,299 - __main__ - ERROR - Attempt 3 failed for float 6902746: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902746'
+2025-09-17 05:34:26,300 - __main__ - ERROR - All attempts failed for float 6902746
+2025-09-17 05:34:26,301 - __main__ - INFO - Fetching phy data for float 6902747 (attempt 1)
+2025-09-17 05:34:26,301 - __main__ - INFO - Successfully processed float 6902746 (9/20)
+2025-09-17 05:34:32,573 - __main__ - INFO - Successfully fetched data for float 6902747
+2025-09-17 05:34:33,082 - __main__ - INFO - Processed 14472 records for float 6902747
+2025-09-17 05:34:34,562 - __main__ - INFO - Successfully fetched data for float 5906003
+2025-09-17 05:34:34,592 - __main__ - INFO - Processed 566 records for float 5906003
+2025-09-17 05:34:34,622 - __main__ - INFO - Stored 153 profiles for float 5906002
+2025-09-17 05:34:34,630 - __main__ - INFO - Fetching bgc data for float 5906002 (attempt 1)
+2025-09-17 05:34:38,059 - __main__ - INFO - Stored 81 profiles for float 5906003
+2025-09-17 05:34:38,065 - __main__ - INFO - Fetching phy data for float 6902748 (attempt 1)
+2025-09-17 05:34:38,065 - __main__ - INFO - Successfully processed float 5906003 (10/20)
+2025-09-17 05:34:46,948 - __main__ - INFO - Successfully fetched data for float 6902748
+2025-09-17 05:34:46,992 - __main__ - INFO - Processed 20077 records for float 6902748
+2025-09-17 05:35:06,089 - argopy.xarray - WARNING - No data left after QC filtering !
+2025-09-17 05:35:06,458 - __main__ - INFO - Successfully fetched data for float 5906002
+2025-09-17 05:35:06,472 - __main__ - INFO - Processed 0 records for float 5906002
+2025-09-17 05:35:06,477 - __main__ - INFO - Fetching phy data for float 6902749 (attempt 1)
+2025-09-17 05:35:06,478 - __main__ - INFO - Successfully processed float 5906002 (11/20)
+2025-09-17 05:35:11,280 - __main__ - INFO - Successfully fetched data for float 6902749
+2025-09-17 05:35:11,324 - __main__ - INFO - Processed 19549 records for float 6902749
+2025-09-17 05:35:19,470 - __main__ - INFO - Stored 145 profiles for float 6902747
+2025-09-17 05:35:19,476 - __main__ - INFO - Fetching bgc data for float 6902747 (attempt 1)
+2025-09-17 05:35:30,553 - __main__ - ERROR - Attempt 1 failed for float 6902747: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902747'
+2025-09-17 05:35:35,555 - __main__ - INFO - Fetching bgc data for float 6902747 (attempt 2)
+2025-09-17 05:35:37,535 - __main__ - INFO - Stored 202 profiles for float 6902748
+2025-09-17 05:35:37,536 - __main__ - INFO - Fetching bgc data for float 6902748 (attempt 1)
+2025-09-17 05:35:45,472 - __main__ - ERROR - Attempt 2 failed for float 6902747: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902747'
+2025-09-17 05:35:49,701 - __main__ - INFO - Stored 177 profiles for float 6902749
+2025-09-17 05:35:49,702 - __main__ - INFO - Fetching bgc data for float 6902749 (attempt 1)
+2025-09-17 05:35:50,475 - __main__ - INFO - Fetching bgc data for float 6902747 (attempt 3)
+2025-09-17 05:35:54,692 - __main__ - ERROR - Attempt 1 failed for float 6902748: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902748'
+2025-09-17 05:35:59,693 - __main__ - INFO - Fetching bgc data for float 6902748 (attempt 2)
+2025-09-17 05:36:02,037 - __main__ - ERROR - Attempt 1 failed for float 6902749: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902749'
+2025-09-17 05:36:06,990 - __main__ - ERROR - Attempt 3 failed for float 6902747: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902747'
+2025-09-17 05:36:06,991 - __main__ - ERROR - All attempts failed for float 6902747
+2025-09-17 05:36:07,021 - __main__ - INFO - Fetching phy data for float 6902750 (attempt 1)
+2025-09-17 05:36:07,024 - __main__ - INFO - Successfully processed float 6902747 (12/20)
+2025-09-17 05:36:07,040 - __main__ - INFO - Fetching bgc data for float 6902749 (attempt 2)
+2025-09-17 05:36:11,382 - __main__ - INFO - Successfully fetched data for float 6902750
+2025-09-17 05:36:11,414 - __main__ - INFO - Processed 16231 records for float 6902750
+2025-09-17 05:36:16,779 - __main__ - ERROR - Attempt 2 failed for float 6902749: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902749'
+2025-09-17 05:36:18,801 - __main__ - ERROR - Attempt 2 failed for float 6902748: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902748'
+2025-09-17 05:36:21,781 - __main__ - INFO - Fetching bgc data for float 6902749 (attempt 3)
+2025-09-17 05:36:23,802 - __main__ - INFO - Fetching bgc data for float 6902748 (attempt 3)
+2025-09-17 05:36:30,454 - __main__ - INFO - Stored 146 profiles for float 6902750
+2025-09-17 05:36:30,456 - __main__ - INFO - Fetching bgc data for float 6902750 (attempt 1)
+2025-09-17 05:36:37,460 - __main__ - ERROR - Attempt 3 failed for float 6902749: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902749'
+2025-09-17 05:36:37,460 - __main__ - ERROR - All attempts failed for float 6902749
+2025-09-17 05:36:37,469 - __main__ - INFO - Fetching phy data for float 7900570 (attempt 1)
+2025-09-17 05:36:37,470 - __main__ - INFO - Successfully processed float 6902749 (13/20)
+2025-09-17 05:36:39,307 - __main__ - ERROR - Attempt 3 failed for float 6902748: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902748'
+2025-09-17 05:36:39,309 - __main__ - ERROR - All attempts failed for float 6902748
+2025-09-17 05:36:39,310 - __main__ - INFO - Fetching phy data for float 7900571 (attempt 1)
+2025-09-17 05:36:39,311 - __main__ - INFO - Successfully processed float 6902748 (14/20)
+2025-09-17 05:36:46,610 - __main__ - ERROR - Attempt 1 failed for float 6902750: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902750'
+2025-09-17 05:36:47,022 - __main__ - INFO - Successfully fetched data for float 7900570
+2025-09-17 05:36:47,142 - __main__ - INFO - Processed 15080 records for float 7900570
+2025-09-17 05:36:48,016 - __main__ - INFO - Successfully fetched data for float 7900571
+2025-09-17 05:36:48,072 - __main__ - INFO - Processed 67034 records for float 7900571
+2025-09-17 05:36:51,612 - __main__ - INFO - Fetching bgc data for float 6902750 (attempt 2)
+2025-09-17 05:37:00,576 - __main__ - ERROR - Attempt 2 failed for float 6902750: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902750'
+2025-09-17 05:37:05,579 - __main__ - INFO - Fetching bgc data for float 6902750 (attempt 3)
+2025-09-17 05:37:07,422 - __main__ - INFO - Stored 37 profiles for float 7900570
+2025-09-17 05:37:07,423 - __main__ - INFO - Fetching bgc data for float 7900570 (attempt 1)
+2025-09-17 05:37:16,287 - __main__ - ERROR - Attempt 3 failed for float 6902750: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902750'
+2025-09-17 05:37:16,288 - __main__ - ERROR - All attempts failed for float 6902750
+2025-09-17 05:37:16,292 - __main__ - INFO - Fetching phy data for float 7900572 (attempt 1)
+2025-09-17 05:37:16,293 - __main__ - INFO - Successfully processed float 6902750 (15/20)
+2025-09-17 05:37:25,369 - __main__ - INFO - Successfully fetched data for float 7900572
+2025-09-17 05:37:25,446 - __main__ - INFO - Processed 72214 records for float 7900572
+2025-09-17 05:37:35,778 - __main__ - ERROR - Attempt 1 failed for float 7900570: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900570'
+2025-09-17 05:37:40,779 - __main__ - INFO - Fetching bgc data for float 7900570 (attempt 2)
+2025-09-17 05:37:49,319 - __main__ - ERROR - Attempt 2 failed for float 7900570: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900570'
+2025-09-17 05:37:54,320 - __main__ - INFO - Fetching bgc data for float 7900570 (attempt 3)
+2025-09-17 05:38:12,754 - __main__ - ERROR - Attempt 3 failed for float 7900570: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900570'
+2025-09-17 05:38:12,754 - __main__ - ERROR - All attempts failed for float 7900570
+2025-09-17 05:38:12,755 - __main__ - INFO - Fetching phy data for float 7900573 (attempt 1)
+2025-09-17 05:38:12,755 - __main__ - INFO - Successfully processed float 7900570 (16/20)
+2025-09-17 05:38:21,311 - __main__ - INFO - Successfully fetched data for float 7900573
+2025-09-17 05:38:21,407 - __main__ - INFO - Processed 77350 records for float 7900573
+2025-09-17 05:38:22,814 - __main__ - INFO - Stored 189 profiles for float 7900571
+2025-09-17 05:38:22,817 - __main__ - INFO - Fetching bgc data for float 7900571 (attempt 1)
+2025-09-17 05:38:33,030 - __main__ - ERROR - Attempt 1 failed for float 7900571: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900571'
+2025-09-17 05:38:38,036 - __main__ - INFO - Fetching bgc data for float 7900571 (attempt 2)
+2025-09-17 05:38:53,699 - __main__ - ERROR - Attempt 2 failed for float 7900571: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900571'
+2025-09-17 05:38:58,367 - __main__ - INFO - Stored 189 profiles for float 7900572
+2025-09-17 05:38:58,370 - __main__ - INFO - Fetching bgc data for float 7900572 (attempt 1)
+2025-09-17 05:38:58,746 - __main__ - INFO - Fetching bgc data for float 7900571 (attempt 3)
+2025-09-17 05:39:10,572 - __main__ - ERROR - Attempt 1 failed for float 7900572: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900572'
+2025-09-17 05:39:14,784 - __main__ - ERROR - Attempt 3 failed for float 7900571: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900571'
+2025-09-17 05:39:14,784 - __main__ - ERROR - All attempts failed for float 7900571
+2025-09-17 05:39:14,790 - __main__ - INFO - Fetching phy data for float 7900574 (attempt 1)
+2025-09-17 05:39:14,790 - __main__ - INFO - Successfully processed float 7900571 (17/20)
+2025-09-17 05:39:15,573 - __main__ - INFO - Fetching bgc data for float 7900572 (attempt 2)
+2025-09-17 05:39:28,671 - __main__ - ERROR - Attempt 2 failed for float 7900572: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900572'
+2025-09-17 05:39:28,760 - __main__ - INFO - Successfully fetched data for float 7900574
+2025-09-17 05:39:28,838 - __main__ - INFO - Processed 51557 records for float 7900574
+2025-09-17 05:39:33,676 - __main__ - INFO - Fetching bgc data for float 7900572 (attempt 3)
+2025-09-17 05:39:41,911 - __main__ - ERROR - Attempt 3 failed for float 7900572: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900572'
+2025-09-17 05:39:41,911 - __main__ - ERROR - All attempts failed for float 7900572
+2025-09-17 05:39:41,921 - __main__ - INFO - Successfully processed float 7900572 (18/20)
+2025-09-17 05:40:30,786 - __main__ - INFO - Stored 190 profiles for float 7900573
+2025-09-17 05:40:30,791 - __main__ - INFO - Fetching bgc data for float 7900573 (attempt 1)
+2025-09-17 05:40:45,318 - __main__ - ERROR - Attempt 1 failed for float 7900573: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900573'
+2025-09-17 05:40:50,319 - __main__ - INFO - Fetching bgc data for float 7900573 (attempt 2)
+2025-09-17 05:40:52,251 - __main__ - INFO - Stored 129 profiles for float 7900574
+2025-09-17 05:40:52,251 - __main__ - INFO - Fetching bgc data for float 7900574 (attempt 1)
+2025-09-17 05:41:01,097 - __main__ - ERROR - Attempt 2 failed for float 7900573: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900573'
+2025-09-17 05:41:04,664 - __main__ - ERROR - Attempt 1 failed for float 7900574: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900574'
+2025-09-17 05:41:06,099 - __main__ - INFO - Fetching bgc data for float 7900573 (attempt 3)
+2025-09-17 05:41:09,673 - __main__ - INFO - Fetching bgc data for float 7900574 (attempt 2)
+2025-09-17 05:41:12,727 - __main__ - ERROR - Attempt 3 failed for float 7900573: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900573'
+2025-09-17 05:41:12,727 - __main__ - ERROR - All attempts failed for float 7900573
+2025-09-17 05:41:12,732 - __main__ - INFO - Successfully processed float 7900573 (19/20)
+2025-09-17 05:41:19,788 - __main__ - ERROR - Attempt 2 failed for float 7900574: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900574'
+2025-09-17 05:41:24,789 - __main__ - INFO - Fetching bgc data for float 7900574 (attempt 3)
+2025-09-17 05:41:35,837 - __main__ - ERROR - Attempt 3 failed for float 7900574: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900574'
+2025-09-17 05:41:35,838 - __main__ - ERROR - All attempts failed for float 7900574
+2025-09-17 05:41:35,841 - __main__ - INFO - Successfully processed float 7900574 (20/20)
+2025-09-17 05:41:35,843 - __main__ - INFO - Bulk ingestion completed: 20 successful, 0 failed
+2025-09-17 05:41:35,843 - __main__ - INFO - Generating embeddings for stored profiles...
+2025-09-17 05:41:41,732 - __main__ - INFO - Generated embeddings for batch 1/22
+2025-09-17 05:41:43,663 - __main__ - INFO - Generated embeddings for batch 2/22
+2025-09-17 05:41:45,622 - __main__ - INFO - Generated embeddings for batch 3/22
+2025-09-17 05:41:47,958 - __main__ - INFO - Generated embeddings for batch 4/22
+2025-09-17 05:41:50,109 - __main__ - INFO - Generated embeddings for batch 5/22
+2025-09-17 05:41:52,017 - __main__ - INFO - Generated embeddings for batch 6/22
+2025-09-17 05:41:54,118 - __main__ - INFO - Generated embeddings for batch 7/22
+2025-09-17 05:41:55,661 - __main__ - INFO - Generated embeddings for batch 8/22
+2025-09-17 05:41:57,189 - __main__ - INFO - Generated embeddings for batch 9/22
+2025-09-17 05:41:58,708 - __main__ - INFO - Generated embeddings for batch 10/22
+2025-09-17 05:42:00,474 - __main__ - INFO - Generated embeddings for batch 11/22
+2025-09-17 05:42:01,882 - __main__ - INFO - Generated embeddings for batch 12/22
+2025-09-17 05:42:03,359 - __main__ - INFO - Generated embeddings for batch 13/22
+2025-09-17 05:42:04,997 - __main__ - INFO - Generated embeddings for batch 14/22
+2025-09-17 05:42:06,940 - __main__ - INFO - Generated embeddings for batch 15/22
+2025-09-17 05:42:08,813 - __main__ - INFO - Generated embeddings for batch 16/22
+2025-09-17 05:42:10,406 - __main__ - INFO - Generated embeddings for batch 17/22
+2025-09-17 05:42:11,953 - __main__ - INFO - Generated embeddings for batch 18/22
+2025-09-17 05:42:13,725 - __main__ - INFO - Generated embeddings for batch 19/22
+2025-09-17 05:42:15,681 - __main__ - INFO - Generated embeddings for batch 20/22
+2025-09-17 05:42:17,467 - __main__ - INFO - Generated embeddings for batch 21/22
+2025-09-17 05:42:17,693 - __main__ - INFO - Generated embeddings for batch 22/22
+2025-09-17 05:42:17,693 - __main__ - INFO - Successfully generated embeddings for 2105 profiles
+2025-09-17 05:42:17,698 - __main__ - INFO - Ingestion completed: 20 successful, 0 failed
+2025-09-17 05:42:18,824 - __main__ - INFO - Database now contains:
+2025-09-17 05:42:18,824 - __main__ - INFO - - 2105 profiles
+2025-09-17 05:42:18,825 - __main__ - INFO - - 1701397 measurements
+2025-09-17 05:42:18,825 - __main__ - INFO - - 8 unique parameters
+2025-09-18 17:15:03,480 - __main__ - INFO - Initializing ARGO data ingestion pipeline...
+2025-09-18 17:15:03,592 - __main__ - INFO - Database connection pool initialized
+2025-09-18 17:15:03,645 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-18 17:15:03,987 - __main__ - INFO - ChromaDB initialized
+2025-09-18 17:15:03,990 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-09-18 17:15:03,990 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-18 17:15:12,653 - __main__ - INFO - Embedding model loaded
+2025-09-18 17:15:12,662 - __main__ - INFO - Starting bulk ingestion for Indian Ocean...
+2025-09-18 17:15:12,662 - __main__ - INFO - Starting bulk ingestion of Indian Ocean ARGO data
+2025-09-18 17:15:12,662 - __main__ - INFO - Searching for floats in Indian Ocean (-30°-30°N, 20°-120°E)
+2025-09-18 17:15:12,662 - __main__ - INFO - Date range: 2020-01-01 to 2025-09-17
+2025-09-18 17:16:12,852 - __main__ - WARNING - Failed to get region index, using fallback method: 
+2025-09-18 17:16:12,852 - __main__ - INFO - Using fallback list of 20 Indian Ocean floats
+2025-09-18 17:16:12,852 - __main__ - INFO - Will process 20 floats with 3 parallel workers
+2025-09-18 17:16:12,852 - __main__ - INFO - Fetching phy data for float 2902696 (attempt 1)
+2025-09-18 17:16:12,852 - __main__ - INFO - Fetching phy data for float 2902697 (attempt 1)
+2025-09-18 17:16:12,852 - __main__ - INFO - Fetching phy data for float 2902698 (attempt 1)
+2025-09-18 17:16:16,874 - __main__ - INFO - Successfully fetched data for float 2902698
+2025-09-18 17:16:16,892 - __main__ - INFO - Processed 6261 records for float 2902698
+2025-09-18 17:16:17,071 - __main__ - INFO - Successfully fetched data for float 2902697
+2025-09-18 17:16:17,090 - __main__ - INFO - Processed 6078 records for float 2902697
+2025-09-18 17:16:17,824 - __main__ - INFO - Successfully fetched data for float 2902696
+2025-09-18 17:16:17,840 - __main__ - INFO - Processed 5784 records for float 2902696
+2025-09-18 17:23:24,364 - __main__ - INFO - Initializing ARGO data ingestion pipeline...
+2025-09-18 17:23:24,545 - __main__ - INFO - Database connection pool initialized
+2025-09-18 17:23:24,626 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-09-18 17:23:24,822 - __main__ - INFO - ChromaDB initialized
+2025-09-18 17:23:24,822 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-09-18 17:23:24,822 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-18 17:23:31,130 - __main__ - INFO - Embedding model loaded
+2025-09-18 17:23:31,131 - __main__ - INFO - Starting bulk ingestion for Indian Ocean...
+2025-09-18 17:23:31,131 - __main__ - INFO - Starting bulk ingestion of Indian Ocean ARGO data
+2025-09-18 17:23:31,131 - __main__ - INFO - Searching for floats in Indian Ocean (-30°-30°N, 20°-120°E)
+2025-09-18 17:23:31,131 - __main__ - INFO - Date range: 2020-01-01 to 2025-09-17
+2025-09-18 17:24:31,841 - __main__ - WARNING - Failed to get region index, using fallback method: 
+2025-09-18 17:24:31,841 - __main__ - INFO - Using fallback list of 20 Indian Ocean floats
+2025-09-18 17:24:31,841 - __main__ - INFO - Will process 20 floats with 3 parallel workers
+2025-09-18 17:24:31,841 - __main__ - INFO - Fetching phy data for float 2902696 (attempt 1)
+2025-09-18 17:24:31,841 - __main__ - INFO - Fetching phy data for float 2902697 (attempt 1)
+2025-09-18 17:24:31,841 - __main__ - INFO - Fetching phy data for float 2902698 (attempt 1)
+2025-09-18 17:24:34,978 - __main__ - INFO - Successfully fetched data for float 2902698
+2025-09-18 17:24:34,999 - __main__ - INFO - Processed 6261 records for float 2902698
+2025-09-18 17:24:36,006 - __main__ - INFO - Successfully fetched data for float 2902697
+2025-09-18 17:24:36,031 - __main__ - INFO - Processed 6078 records for float 2902697
+2025-09-18 17:24:36,342 - __main__ - INFO - Successfully fetched data for float 2902696
+2025-09-18 17:24:36,359 - __main__ - INFO - Processed 5784 records for float 2902696
+2025-09-18 17:24:41,844 - __main__ - INFO - Stored 60 profiles for float 2902698
+2025-09-18 17:24:41,844 - __main__ - INFO - Fetching bgc data for float 2902698 (attempt 1)
+2025-09-18 17:24:42,257 - __main__ - INFO - Stored 51 profiles for float 2902696
+2025-09-18 17:24:42,257 - __main__ - INFO - Fetching bgc data for float 2902696 (attempt 1)
+2025-09-18 17:24:42,371 - __main__ - INFO - Stored 54 profiles for float 2902697
+2025-09-18 17:24:42,371 - __main__ - INFO - Fetching bgc data for float 2902697 (attempt 1)
+2025-09-18 17:24:49,433 - __main__ - ERROR - Attempt 1 failed for float 2902697: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902697'
+2025-09-18 17:24:54,435 - __main__ - INFO - Fetching bgc data for float 2902697 (attempt 2)
+2025-09-18 17:24:56,010 - __main__ - ERROR - Attempt 1 failed for float 2902698: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902698'
+2025-09-18 17:24:57,656 - __main__ - ERROR - Attempt 1 failed for float 2902696: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902696'
+2025-09-18 17:25:01,015 - __main__ - INFO - Fetching bgc data for float 2902698 (attempt 2)
+2025-09-18 17:25:02,657 - __main__ - INFO - Fetching bgc data for float 2902696 (attempt 2)
+2025-09-18 17:25:06,931 - __main__ - ERROR - Attempt 2 failed for float 2902697: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902697'
+2025-09-18 17:25:08,688 - __main__ - ERROR - Attempt 2 failed for float 2902698: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902698'
+2025-09-18 17:25:11,939 - __main__ - INFO - Fetching bgc data for float 2902697 (attempt 3)
+2025-09-18 17:25:13,690 - __main__ - INFO - Fetching bgc data for float 2902698 (attempt 3)
+2025-09-18 17:25:18,785 - __main__ - ERROR - Attempt 3 failed for float 2902697: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902697'
+2025-09-18 17:25:18,785 - __main__ - ERROR - All attempts failed for float 2902697
+2025-09-18 17:25:18,785 - __main__ - INFO - Fetching phy data for float 2902699 (attempt 1)
+2025-09-18 17:25:18,785 - __main__ - INFO - Successfully processed float 2902697 (1/20)
+2025-09-18 17:25:22,005 - __main__ - ERROR - Attempt 1 failed for float 2902699: https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats.nc?config_mission_number,cycle_number,data_mode,direction,latitude,longitude,platform_number,position_qc,pres,pres_adjusted,pres_adjusted_error,pres_adjusted_qc,pres_qc,psal,psal_adjusted,psal_adjusted_error,psal_adjusted_qc,psal_qc,temp,temp_adjusted,temp_adjusted_error,temp_adjusted_qc,temp_qc,time,time_qc,vertical_sampling_scheme&platform_number=~"2902699"&latitude!=NaN&longitude!=NaN&distinct()&orderBy("time,pres")
+2025-09-18 17:25:27,013 - __main__ - INFO - Fetching phy data for float 2902699 (attempt 2)
+2025-09-18 17:25:30,259 - __main__ - ERROR - Attempt 2 failed for float 2902699: https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats.nc?config_mission_number,cycle_number,data_mode,direction,latitude,longitude,platform_number,position_qc,pres,pres_adjusted,pres_adjusted_error,pres_adjusted_qc,pres_qc,psal,psal_adjusted,psal_adjusted_error,psal_adjusted_qc,psal_qc,temp,temp_adjusted,temp_adjusted_error,temp_adjusted_qc,temp_qc,time,time_qc,vertical_sampling_scheme&platform_number=~"2902699"&latitude!=NaN&longitude!=NaN&distinct()&orderBy("time,pres")
+2025-09-18 17:25:33,742 - __main__ - ERROR - Attempt 3 failed for float 2902698: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902698'
+2025-09-18 17:25:33,742 - __main__ - ERROR - All attempts failed for float 2902698
+2025-09-18 17:25:33,750 - __main__ - INFO - Fetching phy data for float 2902700 (attempt 1)
+2025-09-18 17:25:33,750 - __main__ - INFO - Successfully processed float 2902698 (2/20)
+2025-09-18 17:25:35,260 - __main__ - INFO - Fetching phy data for float 2902699 (attempt 3)
+2025-09-18 17:25:36,768 - __main__ - INFO - Successfully fetched data for float 2902700
+2025-09-18 17:25:36,799 - __main__ - INFO - Processed 7075 records for float 2902700
+2025-09-18 17:25:38,491 - __main__ - ERROR - Attempt 3 failed for float 2902699: https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats.nc?config_mission_number,cycle_number,data_mode,direction,latitude,longitude,platform_number,position_qc,pres,pres_adjusted,pres_adjusted_error,pres_adjusted_qc,pres_qc,psal,psal_adjusted,psal_adjusted_error,psal_adjusted_qc,psal_qc,temp,temp_adjusted,temp_adjusted_error,temp_adjusted_qc,temp_qc,time,time_qc,vertical_sampling_scheme&platform_number=~"2902699"&latitude!=NaN&longitude!=NaN&distinct()&orderBy("time,pres")
+2025-09-18 17:25:38,491 - __main__ - ERROR - All attempts failed for float 2902699
+2025-09-18 17:25:38,491 - __main__ - INFO - Fetching bgc data for float 2902699 (attempt 1)
+2025-09-18 17:25:41,224 - __main__ - ERROR - Attempt 2 failed for float 2902696: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902696'
+2025-09-18 17:25:45,636 - __main__ - INFO - Stored 73 profiles for float 2902700
+2025-09-18 17:25:45,636 - __main__ - INFO - Fetching bgc data for float 2902700 (attempt 1)
+2025-09-18 17:25:46,232 - __main__ - INFO - Fetching bgc data for float 2902696 (attempt 3)
+2025-09-18 17:25:47,869 - __main__ - ERROR - Attempt 1 failed for float 2902699: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902699'
+2025-09-18 17:25:52,875 - __main__ - INFO - Fetching bgc data for float 2902699 (attempt 2)
+2025-09-18 17:25:54,014 - __main__ - ERROR - Attempt 3 failed for float 2902696: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902696'
+2025-09-18 17:25:54,014 - __main__ - ERROR - All attempts failed for float 2902696
+2025-09-18 17:25:54,022 - __main__ - INFO - Fetching phy data for float 5906000 (attempt 1)
+2025-09-18 17:25:54,022 - __main__ - INFO - Successfully processed float 2902696 (3/20)
+2025-09-18 17:26:03,047 - __main__ - ERROR - Attempt 2 failed for float 2902699: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902699'
+2025-09-18 17:26:04,568 - __main__ - INFO - Successfully fetched data for float 5906000
+2025-09-18 17:26:04,610 - __main__ - INFO - Processed 41760 records for float 5906000
+2025-09-18 17:26:08,055 - __main__ - INFO - Fetching bgc data for float 2902699 (attempt 3)
+2025-09-18 17:26:18,440 - __main__ - ERROR - Attempt 3 failed for float 2902699: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902699'
+2025-09-18 17:26:18,440 - __main__ - ERROR - All attempts failed for float 2902699
+2025-09-18 17:26:18,440 - __main__ - INFO - Fetching phy data for float 5906001 (attempt 1)
+2025-09-18 17:26:18,440 - __main__ - INFO - Successfully processed float 2902699 (4/20)
+2025-09-18 17:26:22,210 - __main__ - INFO - Successfully fetched data for float 5906001
+2025-09-18 17:26:22,235 - __main__ - INFO - Processed 9457 records for float 5906001
+2025-09-18 17:26:27,721 - __main__ - ERROR - Attempt 1 failed for float 2902700: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902700'
+2025-09-18 17:26:32,722 - __main__ - INFO - Fetching bgc data for float 2902700 (attempt 2)
+2025-09-18 17:26:33,323 - __main__ - INFO - Stored 19 profiles for float 5906001
+2025-09-18 17:26:33,323 - __main__ - INFO - Fetching bgc data for float 5906001 (attempt 1)
+2025-09-18 17:26:42,001 - __main__ - ERROR - Attempt 2 failed for float 2902700: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902700'
+2025-09-18 17:26:45,576 - __main__ - INFO - Stored 84 profiles for float 5906000
+2025-09-18 17:26:45,576 - __main__ - INFO - Fetching bgc data for float 5906000 (attempt 1)
+2025-09-18 17:26:47,006 - __main__ - INFO - Fetching bgc data for float 2902700 (attempt 3)
+2025-09-18 17:27:02,660 - __main__ - ERROR - Attempt 3 failed for float 2902700: 'No data found in the index corresponding to your search criteria. Search definition: WMO2902700'
+2025-09-18 17:27:02,677 - __main__ - ERROR - All attempts failed for float 2902700
+2025-09-18 17:27:02,685 - __main__ - INFO - Fetching phy data for float 5906002 (attempt 1)
+2025-09-18 17:27:02,702 - __main__ - INFO - Successfully processed float 2902700 (5/20)
+2025-09-18 17:27:14,698 - __main__ - INFO - Successfully fetched data for float 5906002
+2025-09-18 17:27:14,806 - __main__ - INFO - Processed 76078 records for float 5906002
+2025-09-18 17:27:19,058 - __main__ - INFO - Successfully fetched data for float 5906001
+2025-09-18 17:27:19,066 - __main__ - INFO - Processed 111 records for float 5906001
+2025-09-18 17:27:20,142 - __main__ - INFO - Stored 11 profiles for float 5906001
+2025-09-18 17:27:20,175 - __main__ - INFO - Fetching phy data for float 5906003 (attempt 1)
+2025-09-18 17:27:20,175 - __main__ - INFO - Successfully processed float 5906001 (6/20)
+2025-09-18 17:27:26,639 - __main__ - INFO - Successfully fetched data for float 5906000
+2025-09-18 17:27:26,655 - __main__ - INFO - Processed 768 records for float 5906000
+2025-09-18 17:27:27,958 - __main__ - INFO - Successfully fetched data for float 5906003
+2025-09-18 17:27:28,031 - __main__ - INFO - Processed 40099 records for float 5906003
+2025-09-18 17:27:31,223 - __main__ - INFO - Stored 84 profiles for float 5906000
+2025-09-18 17:27:31,223 - __main__ - INFO - Fetching phy data for float 5906004 (attempt 1)
+2025-09-18 17:27:31,223 - __main__ - INFO - Successfully processed float 5906000 (7/20)
+2025-09-18 17:27:35,255 - __main__ - INFO - Successfully fetched data for float 5906004
+2025-09-18 17:27:35,299 - __main__ - INFO - Processed 4453 records for float 5906004
+2025-09-18 17:27:43,801 - __main__ - INFO - Stored 9 profiles for float 5906004
+2025-09-18 17:27:43,801 - __main__ - INFO - Fetching bgc data for float 5906004 (attempt 1)
+2025-09-18 17:28:13,472 - __main__ - INFO - Successfully fetched data for float 5906004
+2025-09-18 17:28:13,480 - __main__ - INFO - Processed 57 records for float 5906004
+2025-09-18 17:28:13,652 - __main__ - INFO - Stored 8 profiles for float 5906004
+2025-09-18 17:28:13,652 - __main__ - INFO - Fetching phy data for float 6902746 (attempt 1)
+2025-09-18 17:28:13,652 - __main__ - INFO - Successfully processed float 5906004 (8/20)
+2025-09-18 17:28:19,608 - __main__ - INFO - Successfully fetched data for float 6902746
+2025-09-18 17:28:19,649 - __main__ - INFO - Processed 12518 records for float 6902746
+2025-09-18 17:28:26,160 - __main__ - INFO - Stored 81 profiles for float 5906003
+2025-09-18 17:28:26,160 - __main__ - INFO - Fetching bgc data for float 5906003 (attempt 1)
+2025-09-18 17:28:33,937 - __main__ - INFO - Stored 117 profiles for float 6902746
+2025-09-18 17:28:33,937 - __main__ - INFO - Fetching bgc data for float 6902746 (attempt 1)
+2025-09-18 17:28:56,621 - __main__ - INFO - Stored 153 profiles for float 5906002
+2025-09-18 17:28:56,621 - __main__ - INFO - Fetching bgc data for float 5906002 (attempt 1)
+2025-09-18 17:29:09,886 - __main__ - INFO - Successfully fetched data for float 5906003
+2025-09-18 17:29:09,894 - __main__ - INFO - Processed 566 records for float 5906003
+2025-09-18 17:29:10,954 - __main__ - INFO - Stored 81 profiles for float 5906003
+2025-09-18 17:29:10,971 - __main__ - INFO - Fetching phy data for float 6902747 (attempt 1)
+2025-09-18 17:29:10,987 - __main__ - INFO - Successfully processed float 5906003 (9/20)
+2025-09-18 17:29:12,522 - __main__ - ERROR - Attempt 1 failed for float 6902746: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902746'
+2025-09-18 17:29:17,539 - __main__ - INFO - Fetching bgc data for float 6902746 (attempt 2)
+2025-09-18 17:29:17,944 - __main__ - INFO - Successfully fetched data for float 6902747
+2025-09-18 17:29:17,985 - __main__ - INFO - Processed 14472 records for float 6902747
+2025-09-18 17:29:22,767 - argopy.xarray - WARNING - No data left after QC filtering !
+2025-09-18 17:29:22,957 - __main__ - INFO - Successfully fetched data for float 5906002
+2025-09-18 17:29:22,965 - __main__ - INFO - Processed 0 records for float 5906002
+2025-09-18 17:29:22,967 - __main__ - INFO - Fetching phy data for float 6902748 (attempt 1)
+2025-09-18 17:29:22,967 - __main__ - INFO - Successfully processed float 5906002 (10/20)
+2025-09-18 17:29:24,759 - __main__ - ERROR - Attempt 2 failed for float 6902746: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902746'
+2025-09-18 17:29:28,073 - __main__ - INFO - Successfully fetched data for float 6902748
+2025-09-18 17:29:28,114 - __main__ - INFO - Processed 20077 records for float 6902748
+2025-09-18 17:29:29,762 - __main__ - INFO - Fetching bgc data for float 6902746 (attempt 3)
+2025-09-18 17:29:35,948 - __main__ - ERROR - Attempt 3 failed for float 6902746: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902746'
+2025-09-18 17:29:35,948 - __main__ - ERROR - All attempts failed for float 6902746
+2025-09-18 17:29:35,957 - __main__ - INFO - Fetching phy data for float 6902749 (attempt 1)
+2025-09-18 17:29:35,957 - __main__ - INFO - Successfully processed float 6902746 (11/20)
+2025-09-18 17:29:38,753 - __main__ - INFO - Stored 145 profiles for float 6902747
+2025-09-18 17:29:38,753 - __main__ - INFO - Fetching bgc data for float 6902747 (attempt 1)
+2025-09-18 17:29:41,011 - __main__ - INFO - Successfully fetched data for float 6902749
+2025-09-18 17:29:41,044 - __main__ - INFO - Processed 19549 records for float 6902749
+2025-09-18 17:29:47,825 - __main__ - ERROR - Attempt 1 failed for float 6902747: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902747'
+2025-09-18 17:29:52,271 - __main__ - INFO - Stored 202 profiles for float 6902748
+2025-09-18 17:29:52,271 - __main__ - INFO - Fetching bgc data for float 6902748 (attempt 1)
+2025-09-18 17:29:52,828 - __main__ - INFO - Fetching bgc data for float 6902747 (attempt 2)
+2025-09-18 17:29:59,879 - __main__ - ERROR - Attempt 2 failed for float 6902747: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902747'
+2025-09-18 17:30:01,575 - __main__ - ERROR - Attempt 1 failed for float 6902748: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902748'
+2025-09-18 17:30:03,750 - __main__ - INFO - Stored 177 profiles for float 6902749
+2025-09-18 17:30:03,750 - __main__ - INFO - Fetching bgc data for float 6902749 (attempt 1)
+2025-09-18 17:30:04,886 - __main__ - INFO - Fetching bgc data for float 6902747 (attempt 3)
+2025-09-18 17:30:06,577 - __main__ - INFO - Fetching bgc data for float 6902748 (attempt 2)
+2025-09-18 17:30:11,292 - __main__ - ERROR - Attempt 3 failed for float 6902747: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902747'
+2025-09-18 17:30:11,292 - __main__ - ERROR - All attempts failed for float 6902747
+2025-09-18 17:30:11,292 - __main__ - INFO - Fetching phy data for float 6902750 (attempt 1)
+2025-09-18 17:30:11,292 - __main__ - INFO - Successfully processed float 6902747 (12/20)
+2025-09-18 17:30:18,965 - __main__ - ERROR - Attempt 1 failed for float 6902749: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902749'
+2025-09-18 17:30:19,722 - __main__ - INFO - Successfully fetched data for float 6902750
+2025-09-18 17:30:19,816 - __main__ - INFO - Processed 16231 records for float 6902750
+2025-09-18 17:30:23,981 - __main__ - INFO - Fetching bgc data for float 6902749 (attempt 2)
+2025-09-18 17:30:24,575 - __main__ - ERROR - Attempt 2 failed for float 6902748: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902748'
+2025-09-18 17:30:29,602 - __main__ - INFO - Fetching bgc data for float 6902748 (attempt 3)
+2025-09-18 17:30:31,338 - __main__ - ERROR - Attempt 2 failed for float 6902749: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902749'
+2025-09-18 17:30:34,249 - __main__ - INFO - Stored 146 profiles for float 6902750
+2025-09-18 17:30:34,250 - __main__ - INFO - Fetching bgc data for float 6902750 (attempt 1)
+2025-09-18 17:30:36,344 - __main__ - INFO - Fetching bgc data for float 6902749 (attempt 3)
+2025-09-18 17:30:42,190 - __main__ - ERROR - Attempt 3 failed for float 6902749: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902749'
+2025-09-18 17:30:42,190 - __main__ - ERROR - All attempts failed for float 6902749
+2025-09-18 17:30:42,190 - __main__ - INFO - Fetching phy data for float 7900570 (attempt 1)
+2025-09-18 17:30:42,190 - __main__ - INFO - Successfully processed float 6902749 (13/20)
+2025-09-18 17:30:47,295 - __main__ - ERROR - Attempt 1 failed for float 6902750: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902750'
+2025-09-18 17:30:48,874 - __main__ - ERROR - Attempt 3 failed for float 6902748: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902748'
+2025-09-18 17:30:48,874 - __main__ - ERROR - All attempts failed for float 6902748
+2025-09-18 17:30:48,874 - __main__ - INFO - Fetching phy data for float 7900571 (attempt 1)
+2025-09-18 17:30:48,874 - __main__ - INFO - Successfully processed float 6902748 (14/20)
+2025-09-18 17:30:49,763 - __main__ - INFO - Successfully fetched data for float 7900570
+2025-09-18 17:30:49,779 - __main__ - INFO - Processed 15080 records for float 7900570
+2025-09-18 17:30:52,300 - __main__ - INFO - Fetching bgc data for float 6902750 (attempt 2)
+2025-09-18 17:31:00,315 - __main__ - ERROR - Attempt 2 failed for float 6902750: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902750'
+2025-09-18 17:31:00,567 - __main__ - INFO - Successfully fetched data for float 7900571
+2025-09-18 17:31:00,625 - __main__ - INFO - Processed 67034 records for float 7900571
+2025-09-18 17:31:04,643 - __main__ - INFO - Stored 37 profiles for float 7900570
+2025-09-18 17:31:04,643 - __main__ - INFO - Fetching bgc data for float 7900570 (attempt 1)
+2025-09-18 17:31:05,382 - __main__ - INFO - Fetching bgc data for float 6902750 (attempt 3)
+2025-09-18 17:31:12,031 - __main__ - ERROR - Attempt 3 failed for float 6902750: 'No data found in the index corresponding to your search criteria. Search definition: WMO6902750'
+2025-09-18 17:31:12,031 - __main__ - ERROR - All attempts failed for float 6902750
+2025-09-18 17:31:12,031 - __main__ - INFO - Fetching phy data for float 7900572 (attempt 1)
+2025-09-18 17:31:12,031 - __main__ - INFO - Successfully processed float 6902750 (15/20)
+2025-09-18 17:31:15,650 - __main__ - ERROR - Attempt 1 failed for float 7900570: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900570'
+2025-09-18 17:31:20,655 - __main__ - INFO - Fetching bgc data for float 7900570 (attempt 2)
+2025-09-18 17:31:21,874 - __main__ - INFO - Successfully fetched data for float 7900572
+2025-09-18 17:31:21,975 - __main__ - INFO - Processed 72214 records for float 7900572
+2025-09-18 17:31:28,350 - __main__ - ERROR - Attempt 2 failed for float 7900570: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900570'
+2025-09-18 17:31:33,352 - __main__ - INFO - Fetching bgc data for float 7900570 (attempt 3)
+2025-09-18 17:31:42,504 - __main__ - ERROR - Attempt 3 failed for float 7900570: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900570'
+2025-09-18 17:31:42,504 - __main__ - ERROR - All attempts failed for float 7900570
+2025-09-18 17:31:42,504 - __main__ - INFO - Fetching phy data for float 7900573 (attempt 1)
+2025-09-18 17:31:42,504 - __main__ - INFO - Successfully processed float 7900570 (16/20)
+2025-09-18 17:31:57,482 - __main__ - INFO - Successfully fetched data for float 7900573
+2025-09-18 17:31:57,555 - __main__ - INFO - Processed 77350 records for float 7900573
+2025-09-18 17:32:20,149 - __main__ - INFO - Stored 189 profiles for float 7900571
+2025-09-18 17:32:20,149 - __main__ - INFO - Fetching bgc data for float 7900571 (attempt 1)
+2025-09-18 17:32:26,473 - __main__ - ERROR - Attempt 1 failed for float 7900571: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900571'
+2025-09-18 17:32:31,475 - __main__ - INFO - Fetching bgc data for float 7900571 (attempt 2)
+2025-09-18 17:32:38,430 - __main__ - ERROR - Attempt 2 failed for float 7900571: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900571'
+2025-09-18 17:32:43,437 - __main__ - INFO - Fetching bgc data for float 7900571 (attempt 3)
+2025-09-18 17:32:46,344 - __main__ - INFO - Stored 189 profiles for float 7900572
+2025-09-18 17:32:46,345 - __main__ - INFO - Fetching bgc data for float 7900572 (attempt 1)
+2025-09-18 17:32:55,822 - __main__ - ERROR - Attempt 3 failed for float 7900571: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900571'
+2025-09-18 17:32:55,822 - __main__ - ERROR - All attempts failed for float 7900571
+2025-09-18 17:32:55,822 - __main__ - INFO - Fetching phy data for float 7900574 (attempt 1)
+2025-09-18 17:32:55,822 - __main__ - INFO - Successfully processed float 7900571 (17/20)
+2025-09-18 17:33:05,432 - __main__ - INFO - Successfully fetched data for float 7900574
+2025-09-18 17:33:05,521 - __main__ - INFO - Processed 51557 records for float 7900574
+2025-09-18 17:33:18,392 - __main__ - ERROR - Attempt 1 failed for float 7900572: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900572'
+2025-09-18 17:33:21,669 - __main__ - INFO - Stored 190 profiles for float 7900573
+2025-09-18 17:33:21,675 - __main__ - INFO - Fetching bgc data for float 7900573 (attempt 1)
+2025-09-18 17:33:23,396 - __main__ - INFO - Fetching bgc data for float 7900572 (attempt 2)
+2025-09-18 17:33:30,249 - __main__ - ERROR - Attempt 2 failed for float 7900572: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900572'
+2025-09-18 17:33:32,412 - __main__ - ERROR - Attempt 1 failed for float 7900573: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900573'
+2025-09-18 17:33:35,250 - __main__ - INFO - Fetching bgc data for float 7900572 (attempt 3)
+2025-09-18 17:33:37,415 - __main__ - INFO - Fetching bgc data for float 7900573 (attempt 2)
+2025-09-18 17:33:40,940 - __main__ - ERROR - Attempt 3 failed for float 7900572: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900572'
+2025-09-18 17:33:40,940 - __main__ - ERROR - All attempts failed for float 7900572
+2025-09-18 17:33:40,948 - __main__ - INFO - Successfully processed float 7900572 (18/20)
+2025-09-18 17:33:44,228 - __main__ - ERROR - Attempt 2 failed for float 7900573: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900573'
+2025-09-18 17:33:49,236 - __main__ - INFO - Fetching bgc data for float 7900573 (attempt 3)
+2025-09-18 17:33:56,978 - __main__ - ERROR - Attempt 3 failed for float 7900573: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900573'
+2025-09-18 17:33:56,978 - __main__ - ERROR - All attempts failed for float 7900573
+2025-09-18 17:33:56,986 - __main__ - INFO - Successfully processed float 7900573 (19/20)
+2025-09-18 17:34:00,922 - __main__ - INFO - Stored 129 profiles for float 7900574
+2025-09-18 17:34:00,922 - __main__ - INFO - Fetching bgc data for float 7900574 (attempt 1)
+2025-09-18 17:34:09,952 - __main__ - ERROR - Attempt 1 failed for float 7900574: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900574'
+2025-09-18 17:34:14,956 - __main__ - INFO - Fetching bgc data for float 7900574 (attempt 2)
+2025-09-18 17:34:34,631 - __main__ - ERROR - Attempt 2 failed for float 7900574: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900574'
+2025-09-18 17:34:39,639 - __main__ - INFO - Fetching bgc data for float 7900574 (attempt 3)
+2025-09-18 17:34:55,894 - __main__ - ERROR - Attempt 3 failed for float 7900574: 'No data found in the index corresponding to your search criteria. Search definition: WMO7900574'
+2025-09-18 17:34:55,894 - __main__ - ERROR - All attempts failed for float 7900574
+2025-09-18 17:34:55,894 - __main__ - INFO - Successfully processed float 7900574 (20/20)
+2025-09-18 17:34:55,894 - __main__ - INFO - Bulk ingestion completed: 20 successful, 0 failed
+2025-09-18 17:34:55,894 - __main__ - INFO - Generating embeddings for stored profiles...
+2025-09-18 17:34:59,592 - __main__ - INFO - Generated embeddings for batch 1/22
+2025-09-18 17:35:01,820 - __main__ - INFO - Generated embeddings for batch 2/22
+2025-09-18 17:35:04,231 - __main__ - INFO - Generated embeddings for batch 3/22
+2025-09-18 17:35:06,638 - __main__ - INFO - Generated embeddings for batch 4/22
+2025-09-18 17:35:09,125 - __main__ - INFO - Generated embeddings for batch 5/22
+2025-09-18 17:35:11,309 - __main__ - INFO - Generated embeddings for batch 6/22
+2025-09-18 17:35:13,273 - __main__ - INFO - Generated embeddings for batch 7/22
+2025-09-18 17:35:15,117 - __main__ - INFO - Generated embeddings for batch 8/22
+2025-09-18 17:35:16,660 - __main__ - INFO - Generated embeddings for batch 9/22
+2025-09-18 17:35:18,240 - __main__ - INFO - Generated embeddings for batch 10/22
+2025-09-18 17:35:19,767 - __main__ - INFO - Generated embeddings for batch 11/22
+2025-09-18 17:35:21,235 - __main__ - INFO - Generated embeddings for batch 12/22
+2025-09-18 17:35:22,924 - __main__ - INFO - Generated embeddings for batch 13/22
+2025-09-18 17:35:24,508 - __main__ - INFO - Generated embeddings for batch 14/22
+2025-09-18 17:35:26,061 - __main__ - INFO - Generated embeddings for batch 15/22
+2025-09-18 17:35:27,756 - __main__ - INFO - Generated embeddings for batch 16/22
+2025-09-18 17:35:29,313 - __main__ - INFO - Generated embeddings for batch 17/22
+2025-09-18 17:35:30,905 - __main__ - INFO - Generated embeddings for batch 18/22
+2025-09-18 17:35:32,581 - __main__ - INFO - Generated embeddings for batch 19/22
+2025-09-18 17:35:34,262 - __main__ - INFO - Generated embeddings for batch 20/22
+2025-09-18 17:35:35,901 - __main__ - INFO - Generated embeddings for batch 21/22
+2025-09-18 17:35:36,048 - __main__ - INFO - Generated embeddings for batch 22/22
+2025-09-18 17:35:36,048 - __main__ - INFO - Successfully generated embeddings for 2105 profiles
+2025-09-18 17:35:36,056 - __main__ - INFO - Ingestion completed: 20 successful, 0 failed
+2025-09-18 17:35:36,644 - __main__ - INFO - Database now contains:
+2025-09-18 17:35:36,644 - __main__ - INFO - - 2105 profiles
+2025-09-18 17:35:36,644 - __main__ - INFO - - 1701397 measurements
+2025-09-18 17:35:36,644 - __main__ - INFO - - 8 unique parameters

@@ -1,0 +1,37 @@
+# requirements.txt - Enhanced FloatChat Dependencies
+
+# Core dependencies
+streamlit>=1.28.0
+pandas>=2.0.0
+numpy>=1.24.0
+plotly>=5.17.0
+xarray>=2023.1.0
+scipy>=1.10.0
+
+# ARGO data access
+argopy>=0.1.15
+
+# Database dependencies  
+psycopg2-binary>=2.9.7
+sqlalchemy>=2.0.0
+
+# Vector database and embeddings
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+
+# NLP processing
+spacy>=3.7.0
+
+# Additional utilities
+requests>=2.31.0
+cftime>=1.6.2
+configparser>=5.3.0
+
+# Optional: For enhanced BGC data processing
+netcdf4>=1.6.0
+h5py>=3.9.0
+
+# Development and testing
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
